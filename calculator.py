@@ -94,8 +94,7 @@ button_9 = Button(root, text="9", padx=40, pady=20,
                   command=lambda: button_click(9))
 button_0 = Button(root, text="0", padx=40, pady=20,
                   command=lambda: button_click(0))
-button_addition = Button(root, text="+", padx=39, pady=20,
-                         command=button_add)
+
 button_equal = Button(root, text="=", padx=91, pady=20, bg="Grey",
                       command=button_equal)
 button_clear = Button(root, text="Clear", padx=79,
@@ -103,12 +102,12 @@ button_clear = Button(root, text="Clear", padx=79,
 button_addition = Button(root, text="+", padx=39, pady=20,
                          command=button_add)
 
-button_subtract = Button(root, text="-", padx=41, pady=20,
-                         command=button_subtract)
-button_multiply = Button(root, text="*", padx=40, pady=20,
-                         command=button_multiply)
-button_divide = Button(root, text="/", padx=41, pady=20,
-                       command=button_divide)
+button_subtraction = Button(root, text="-", padx=41, pady=20,
+                            command=button_subtract)
+button_multiplication = Button(root, text="*", padx=40, pady=20,
+                               command=button_multiply)
+button_divison = Button(root, text="/", padx=41, pady=20,
+                        command=button_divide)
 
 
 # Displaying buttons on the screen
@@ -129,8 +128,9 @@ button_clear.grid(row=4, column=1, columnspan=2)
 button_addition.grid(row=5, column=0)
 button_equal.grid(row=5, column=1, columnspan=2)
 
-button_subtract.grid(row=6, column=0)
-button_multiply.grid(row=6, column=1)
-button_divide.grid(row=6, column=2)
+button_subtraction.grid(row=6, column=0)
+button_multiplication.grid(row=6, column=1)
+button_divison.grid(row=6, column=2)
 
 root.mainloop()
+
